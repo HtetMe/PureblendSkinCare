@@ -1,0 +1,675 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Products | PureBlend</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Standard favicon link using PNG format -->
+    <link rel="icon" type="image/png" href="img/pureblend logo PB.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="/SkincareProject(Asg2)/css/style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+    <script src="/SkincareProject(Asg2)/scriptJs/main.js"></script>
+
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg shadow-sm" style="background-color: #F7DDE2;">
+        <div class="container">
+            <img src="img/Pink Modern Skincare Logo.png" alt="pureblend logo"
+                style="border-radius: 1000px; width: 100px">
+            <a class="navbar-brand fw-bold" href="home.html"
+                style="color:#D4AF37; font-family:'Playfair Display';">PureBlend Skincare</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainmenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="mainmenu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a href="aboutus.html" class="nav-link">About</a></li>
+                    <li class="nav-item"><a href="products.html" class="nav-link">Products</a></li>
+                    <li class="nav-item"><a href="home.html" class="nav-link">Best Sellers</a></li>
+                    <li class="nav-item"><a href="blog.html" class="nav-link">Blog</a></li>
+                    <li class="nav-item"><a href="faq.html" class="nav-link">FAQ</a></li>
+                    <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+                    <li class="nav-item position-relative">
+                        <a class="nav-link" href="#" onclick="toggleCart()">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                            <span id="cart-count" class="cart-badge">0</span>
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- TITLE -->
+    <section class="text-center py-5">
+        <h1 class="section-title">Our Products</h1>
+        <p>Complete skincare collection for every routine</p>
+        <div class="text-center mb-5">
+            <button class="btn btn-outline-pink me-2" onclick="filterProducts('all')">All</button>
+            <a href="#cleanser"><button class="btn btn-outline-pink me-2" onclick="filterProducts('cleanser')">Cleansers</button></a>
+            <a href="#toner"><button class="btn btn-outline-pink me-2" onclick="filterProducts('toner')">Toners</button></a>
+            <a href="#serum"><button class="btn btn-outline-pink me-2" onclick="filterProducts('serum')">Serums</button></a>
+            <a href="#moisturizer"><button class="btn btn-outline-pink me-2" onclick="filterProducts('cream')">Moisturizers</button></a>
+            <a href="#mask"><button class="btn btn-outline-pink me-2" onclick="filterProducts('mask')">Masks</button></a>
+            <a href="#sets"><button class="btn btn-outline-pink me-2" onclick="filterProducts('set')">Sets</button></a>
+        </div>
+    </section>
+    <section class="container">
+        <div class="container">
+
+            <!-- ========== CLEANSERS ========== -->
+            <section class="product-section">
+                <div class="container">
+
+                    <div class="section-header d-flex justify-content-between align-items-center">
+                        <h2 class="section-title" id="cleanser">Cleansers</h2>
+
+                        <div class="slider-controls">
+                            <button class="slider-btn" onclick="slideLeft('cleansers')">❮</button>
+                            <button class="slider-btn" onclick="slideRight('cleansers')">❯</button>
+                        </div>
+                    </div>
+
+                    <div class="product-slider" id="cleansers">
+
+                        <!-- PRODUCT CARD -->
+                        <div class="product-card">
+                            <div class="img-box">
+                                <img src="img/cleanser.jpg">
+                            </div>
+                            <div class="wishlist-icon" onclick="toggleWishlist(this)">
+                                <i class="fa-regular fa-heart"></i>
+                            </div>
+                            <h6>Pink Cloud Cleanser</h6>
+                            <button class="btn btn-pink">Add to Cart</button>
+                            <a href="productdetailcleanser1.html" target="_blank" class="view-details">View Details</a>
+                        </div>
+                        <div class="product-card">
+                            <div class="img-box">
+                                <img src="img/gelcleanser.jpg">
+                            </div>
+                            <div class="wishlist-icon" onclick="toggleWishlist(this)">
+                                <i class="fa-regular fa-heart"></i>
+                            </div>
+                            <h6>Super Amino Gel Cleanser</h6>
+                            <button class="btn btn-pink">Add to Cart</button>
+                            <a href="cleanser2.html" target="_blank" class="view-details">View Details</a>
+                        </div>
+                        <div class="product-card">
+                            <div class="img-box">
+                                <img src="img/cleansingwater.jpg">
+                            </div>
+                            <div class="wishlist-icon" onclick="toggleWishlist(this)">
+                                <i class="fa-regular fa-heart"></i>
+                            </div>
+                            <h6>Blithe Miscellaneous Cleansing Water</h6>
+                            <button class="btn btn-pink">Add to Cart</button>
+                            <a href="cleanser3.html" target="_blank" class="view-details">View Details</a>
+                        </div>
+                        <div class="product-card">
+                            <div class="img-box">
+                                <img src="img/foamingcleanser.jpg">
+                            </div>
+                            <div class="wishlist-icon" onclick="toggleWishlist(this)">
+                                <i class="fa-regular fa-heart"></i>
+                            </div>
+                            <h6>Foaming Cleanser</h6>
+                            <button class="btn btn-pink">Add to Cart</button>
+                            <a href="cleanser4.html" target="_blank" class="view-details">View Details</a>
+                        </div>
+                        <div class="product-card">
+                            <div class="img-box">
+                                <img src="img/brightcleanser.jpg">
+                            </div>
+                            <div class="wishlist-icon" onclick="toggleWishlist(this)">
+                                <i class="fa-regular fa-heart"></i>
+                            </div>
+                            <h6>Brightening Clean Cleanser</h6>
+                            <button class="btn btn-pink">Add to Cart</button>
+                            <a href="cleanser5.html" target="_blank" class="view-details">View Details</a>
+                        </div>
+                        <div class="product-card">
+                            <div class="img-box">
+                                <img src="img/milksoftcleanser.jpg">
+                            </div>
+                            <div class="wishlist-icon" onclick="toggleWishlist(this)">
+                                <i class="fa-regular fa-heart"></i>
+                            </div>
+                            <h6>Milk Soft Cleanser</h6>
+                            <button class="btn btn-pink">Add to Cart</button>
+                            <a href="cleanser6.html" target="_blank" class="view-details">View Details</a>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+            <!-- ========== TONERS ========== -->
+            <section class="product-section">
+                <div class="container">
+
+                    <div class="section-header d-flex justify-content-between align-items-center">
+                        <h2 class="section-title" id="toner">Toners</h2>
+
+                        <div class="slider-controls">
+                            <button class="slider-btn" onclick="slideLeft('toners')">❮</button>
+                            <button class="slider-btn" onclick="slideRight('toners')">❯</button>
+                        </div>
+                    </div>
+
+                    <div class="product-slider" id="toners">
+
+                        <!-- PRODUCT CARD -->
+                        <div class="product-card">
+                            <div class="img-box">
+                                <img src="img/rosewatertoner.jpg">
+                            </div>
+                            <div class="wishlist-icon" onclick="toggleWishlist(this)">
+                                <i class="fa-regular fa-heart"></i>
+                            </div>
+                            <h6>Rose Water Toner</h6>
+                            <button class="btn btn-pink">Add to Cart</button>
+                            <a href="toner1.html" class="view-details">View Details</a>
+                        </div>
+                        <div class="product-card">
+                            <div class="img-box">
+                                <img src="img/soothingaloetoner.jpg">
+                            </div>
+                            <div class="wishlist-icon" onclick="toggleWishlist(this)">
+                                <i class="fa-regular fa-heart"></i>
+                            </div>
+                            <h6>Soothing Aloe Toner</h6>
+                            <button class="btn btn-pink">Add to Cart</button>
+                            <a href="toner2.html" class="view-details">View Details</a>
+                        </div>
+                        <div class="product-card">
+                            <div class="img-box">
+                                <img src="img/poretoner.jpg">
+                            </div>
+                            <div class="wishlist-icon" onclick="toggleWishlist(this)">
+                                <i class="fa-regular fa-heart"></i>
+                            </div>
+                            <h6>Pore Refining Toner</h6>
+                            <button class="btn btn-pink">Add to Cart</button>
+                            <a href="toner3.html" class="view-details">View Details</a>
+                        </div>
+                        <div class="product-card">
+                            <div class="img-box">
+                                <img src="img/greenteatoner.jpg">
+                            </div>
+                            <div class="wishlist-icon" onclick="toggleWishlist(this)">
+                                <i class="fa-regular fa-heart"></i>
+                            </div>
+                            <h6>Green Tea Balance Toner</h6>
+                            <button class="btn btn-pink">Add to Cart</button>
+                            <a href="toner4.html" class="view-details">View Details</a>
+                        </div>
+                        <div class="product-card">
+                            <div class="img-box">
+                                <img src="img/glowpreptoner.jpg">
+                            </div>
+                            <div class="wishlist-icon" onclick="toggleWishlist(this)">
+                                <i class="fa-regular fa-heart"></i>
+                            </div>
+                            <h6>Glow Prep Toner</h6>
+                            <button class="btn btn-pink">Add to Cart</button>
+                            <a href="toner5.html" class="view-details">View Details</a>
+                        </div>
+                        <div class="product-card">
+                            <div class="img-box">
+                                <img src="img/hydrateboosttoner.jpg">
+                            </div>
+                            <div class="wishlist-icon" onclick="toggleWishlist(this)">
+                                <i class="fa-regular fa-heart"></i>
+                            </div>
+                            <h6>Hydration Boost Toner</h6>
+                            <button class="btn btn-pink">Add to Cart</button>
+                            <a href="toner6.html" class="view-details">View Details</a>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+            <!-- ========== SERUMS ========== -->
+            <section class="product-section">
+                <div class="container">
+
+                    <div class="section-header d-flex justify-content-between align-items-center">
+                        <h2 class="section-title" id="serum">Serums</h2>
+
+                        <div class="slider-controls">
+                            <button class="slider-btn" onclick="slideLeft('serums')">❮</button>
+                            <button class="slider-btn" onclick="slideRight('serums')">❯</button>
+                        </div>
+                    </div>
+
+                    <div class="product-slider" id="serums">
+
+                        <!-- PRODUCT CARD -->
+                        <div class="product-card">
+                            <div class="img-box">
+                                <img src="img/roseglowserum.jpg">
+                            </div>
+                            <div class="wishlist-icon" onclick="toggleWishlist(this)">
+                                <i class="fa-regular fa-heart"></i>
+                            </div>
+                            <h6>Rose Glow Serum</h6>
+                            <button class="btn btn-pink">Add to Cart</button>
+                            <a href="productdetailserum1.html" target="_blank" class="view-details">View Details</a>
+                        </div>
+                        <div class="product-card">
+                            <div class="img-box">
+                                <img src="img/HyaluronicAcidSerum.jpg">
+                            </div>
+                            <div class="wishlist-icon" onclick="toggleWishlist(this)">
+                                <i class="fa-regular fa-heart"></i>
+                            </div>
+                            <h6>Hyaluronic Acid Serum</h6>
+                            <button class="btn btn-pink">Add to Cart</button>
+                            <a href="serum2.html" class="view-details">View Details</a>
+                        </div>
+                        <div class="product-card">
+                            <div class="img-box">
+                                <img src="img/Vitamin C Brightening Serum.jpg">
+                            </div>
+                            <div class="wishlist-icon" onclick="toggleWishlist(this)">
+                                <i class="fa-regular fa-heart"></i>
+                            </div>
+                            <h6>Vitamin C Brightening Serum</h6>
+                            <button class="btn btn-pink">Add to Cart</button>
+                            <a href="serum3.html" class="view-details">View Details</a>
+                        </div>
+                        <div class="product-card">
+                            <div class="img-box">
+                                <img src="img/Niacinamide Repair Serum.jpg">
+                            </div>
+                            <div class="wishlist-icon" onclick="toggleWishlist(this)">
+                                <i class="fa-regular fa-heart"></i>
+                            </div>
+                            <h6>Niacinamide Repair Serum</h6>
+                            <button class="btn btn-pink">Add to Cart</button>
+                            <a href="serum4.html" class="view-details">View Details</a>
+                        </div>
+                        <div class="product-card">
+                            <div class="img-box">
+                                <img src="img/Calm Repair Serum.jpg">
+                            </div>
+                            <div class="wishlist-icon" onclick="toggleWishlist(this)">
+                                <i class="fa-regular fa-heart"></i>
+                            </div>
+                            <h6>Calm Repair Serum</h6>
+                            <button class="btn btn-pink">Add to Cart</button>
+                            <a href="serum5.html" class="view-details">View Details</a>
+                        </div>
+                        <div class="product-card">
+                            <div class="img-box">
+                                <img src="img/Glow Boost Serum.jpg">
+                            </div>
+                            <div class="wishlist-icon" onclick="toggleWishlist(this)">
+                                <i class="fa-regular fa-heart"></i>
+                            </div>
+                            <h6>Glow Boost Serum</h6>
+                            <button class="btn btn-pink">Add to Cart</button>
+                            <a href="serum6.html" class="view-details">View Details</a>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+<!-- ========== Moisturizers ========== -->
+            <section class="product-section">
+                <div class="container">
+
+                    <div class="section-header d-flex justify-content-between align-items-center">
+                        <h2 class="section-title" id="moisturizer">Moisturizers</h2>
+
+                        <div class="slider-controls">
+                            <button class="slider-btn" onclick="slideLeft('moisturizers')">❮</button>
+                            <button class="slider-btn" onclick="slideRight('moisturizers')">❯</button>
+                        </div>
+                    </div>
+
+                    <div class="product-slider" id="moisturizers">
+
+                        <!-- PRODUCT CARD -->
+                        <div class="product-card">
+                            <div class="img-box">
+                                <img src="img/HydraSoft Moisturiser.jpg">
+                            </div>
+                            <div class="wishlist-icon" onclick="toggleWishlist(this)">
+                                <i class="fa-regular fa-heart"></i>
+                            </div>
+                            <h6>HydraSoft Moisturiser</h6>
+                            <button class="btn btn-pink">Add to Cart</button>
+                            <a href="moisturiser1.html" target="_blank" class="view-details">View Details</a>
+                        </div>
+                        <div class="product-card">
+                            <div class="img-box">
+                                <img src="img/Vitamin C Brightening Cream.jpg">
+                            </div>
+                            <div class="wishlist-icon" onclick="toggleWishlist(this)">
+                                <i class="fa-regular fa-heart"></i>
+                            </div>
+                            <h6>Vitamin C Brightening Cream</h6>
+                            <button class="btn btn-pink">Add to Cart</button>
+                            <a href="moisturiser2.html" class="view-details">View Details</a>
+                        </div>
+                        <div class="product-card">
+                            <div class="img-box">
+                                <img src="img/Night Repair Cream.jpg">
+                            </div>
+                            <div class="wishlist-icon" onclick="toggleWishlist(this)">
+                                <i class="fa-regular fa-heart"></i>
+                            </div>
+                            <h6>Night Repair Cream</h6>
+                            <button class="btn btn-pink">Add to Cart</button>
+                            <a href="moisturiser3.html" class="view-details">View Details</a>
+                        </div>
+                        <div class="product-card">
+                            <div class="img-box">
+                                <img src="img/Calm Barrier Cream.jpg">
+                            </div>
+                            <div class="wishlist-icon" onclick="toggleWishlist(this)">
+                                <i class="fa-regular fa-heart"></i>
+                            </div>
+                            <h6>Calm Barrier Cream</h6>
+                            <button class="btn btn-pink">Add to Cart</button>
+                            <a href="moisturiser4.html" class="view-details">View Details</a>
+                        </div>
+                        <div class="product-card">
+                            <div class="img-box">
+                                <img src="img/Deep Moisture Cream.jpg">
+                            </div>
+                            <div class="wishlist-icon" onclick="toggleWishlist(this)">
+                                <i class="fa-regular fa-heart"></i>
+                            </div>
+                            <h6>Deep Moisture Cream</h6>
+                            <button class="btn btn-pink">Add to Cart</button>
+                            <a href="moisturiser5.html" class="view-details">View Details</a>
+                        </div>
+                        <div class="product-card">
+                            <div class="img-box">
+                                <img src="img/Glow Lock Cream.jpg">
+                            </div>
+                            <div class="wishlist-icon" onclick="toggleWishlist(this)">
+                                <i class="fa-regular fa-heart"></i>
+                            </div>
+                            <h6>Glow Lock Cream</h6>
+                            <button class="btn btn-pink">Add to Cart</button>
+                            <a href="moisturiser6.html" class="view-details">View Details</a>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+
+            <!-- ========== MASKS ========== -->
+            <section class="product-section">
+                <div class="container">
+
+                    <div class="section-header d-flex justify-content-between align-items-center">
+                        <h2 class="section-title" id="mask">Masks</h2>
+
+                        <div class="slider-controls">
+                            <button class="slider-btn" onclick="slideLeft('masks')">❮</button>
+                            <button class="slider-btn" onclick="slideRight('masks')">❯</button>
+                        </div>
+                    </div>
+
+                    <div class="product-slider" id="masks">
+
+                        <!-- PRODUCT CARD -->
+                        <div class="product-card">
+                            <div class="img-box">
+                                <img src="img/Clay Detox Mask.jpg">
+                            </div>
+                            <div class="wishlist-icon" onclick="toggleWishlist(this)">
+                                <i class="fa-regular fa-heart"></i>
+                            </div>
+                            <h6>Clay Detox Mask</h6>
+                            <button class="btn btn-pink">Add to Cart</button>
+                            <a href="mask1.html" class="view-details">View Details</a>
+                        </div>
+                        <div class="product-card">
+                            <div class="img-box">
+                                <img src="img/Rose Sleeping Mask.jpg">
+                            </div>
+                            <div class="wishlist-icon" onclick="toggleWishlist(this)">
+                                <i class="fa-regular fa-heart"></i>
+                            </div>
+                            <h6>Rose Sleeping Mask</h6>
+                            <button class="btn btn-pink">Add to Cart</button>
+                            <a href="mask2.html" class="view-details">View Details</a>
+                        </div>
+                        <div class="product-card">
+                            <div class="img-box">
+                                <img src="img/Hydration Sheet Mask.jpg">
+                            </div>
+                            <div class="wishlist-icon" onclick="toggleWishlist(this)">
+                                <i class="fa-regular fa-heart"></i>
+                            </div>
+                            <h6>Hydration Sheet Mask</h6>
+                            <button class="btn btn-pink">Add to Cart</button>
+                            <a href="mask3.html" class="view-details">View Details</a>
+                        </div>
+                        <div class="product-card">
+                            <div class="img-box">
+                                <img src="img/Brightening Gel Mask.jpg">
+                            </div>
+                            <div class="wishlist-icon" onclick="toggleWishlist(this)">
+                                <i class="fa-regular fa-heart"></i>
+                            </div>
+                            <h6>Brightening Gel Mask</h6>
+                            <button class="btn btn-pink">Add to Cart</button>
+                            <a href="mask4.html" class="view-details">View Details</a>
+                        </div>
+                        <div class="product-card">
+                            <div class="img-box">
+                                <img src="img/Calm Soothing Mask.jpg">
+                            </div>
+                            <div class="wishlist-icon" onclick="toggleWishlist(this)">
+                                <i class="fa-regular fa-heart"></i>
+                            </div>
+                            <h6>Calm Soothing Mask</h6>
+                            <button class="btn btn-pink">Add to Cart</button>
+                            <a href="mask5.html" class="view-details">View Details</a>
+                        </div>
+                        <div class="product-card">
+                            <div class="img-box">
+                                <img src="img/Glow Boost Mask.jpg">
+                            </div>
+                            <div class="wishlist-icon" onclick="toggleWishlist(this)">
+                                <i class="fa-regular fa-heart"></i>
+                            </div>
+                            <h6>Glow Boost Mask</h6>
+                            <button class="btn btn-pink">Add to Cart</button>
+                            <a href="mask6.html" class="view-details">View Details</a>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+            <!-- ========== Sets & Bundles========== -->
+            <section class="product-section">
+                <div class="container">
+
+                    <div class="section-header d-flex justify-content-between align-items-center">
+                        <h2 class="section-title" id="sets">Sets & Bundles</h2>
+
+                        <div class="slider-controls">
+                            <button class="slider-btn" onclick="slideLeft('setbundle')">❮</button>
+                            <button class="slider-btn" onclick="slideRight('setbundle')">❯</button>
+                        </div>
+                    </div>
+
+                    <div class="product-slider" id="setbundle">
+
+                        <!-- PRODUCT CARD -->
+                        <div class="product-card">
+                            <div class="img-box">
+                                <img src="img/Glow Starter Set.jpg">
+                            </div>
+                            <div class="wishlist-icon" onclick="toggleWishlist(this)">
+                                <i class="fa-regular fa-heart"></i>
+                            </div>
+                            <h6>Glow Starter Set</h6>
+                            <button class="btn btn-pink">Add to Cart</button>
+                            <a href="set1.html" class="view-details">View Details</a>
+                        </div>
+                        <div class="product-card">
+                            <div class="img-box">
+                                <img src="img/Acne Care Set.jpg">
+                            </div>
+                            <div class="wishlist-icon" onclick="toggleWishlist(this)">
+                                <i class="fa-regular fa-heart"></i>
+                            </div>
+                            <h6>Acne Care Set</h6>
+                            <button class="btn btn-pink">Add to Cart</button>
+                            <a href="set2.html" class="view-details">View Details</a>
+                        </div>
+                        <div class="product-card">
+                            <div class="img-box">
+                                <img src="img/Hydration Routine Set.jpg">
+                            </div>
+                            <div class="wishlist-icon" onclick="toggleWishlist(this)">
+                                <i class="fa-regular fa-heart"></i>
+                            </div>
+                            <h6>Hydration Routine Set</h6>
+                            <button class="btn btn-pink">Add to Cart</button>
+                            <a href="set3.html" class="view-details">View Details</a>
+                        </div>
+                        <div class="product-card">
+                            <div class="img-box">
+                                <img src="img/Sensitive Skin Set.jpg">
+                            </div>
+                            <div class="wishlist-icon" onclick="toggleWishlist(this)">
+                                <i class="fa-regular fa-heart"></i>
+                            </div>
+                            <h6>Sensitive Skin Set</h6>
+                            <button class="btn btn-pink">Add to Cart</button>
+                            <a href="set4.html" class="view-details">View Details</a>
+                        </div>
+                        <div class="product-card">
+                            <div class="img-box">
+                                <img src="img/Brightening Essentials Set.jpg">
+                            </div>
+                            <div class="wishlist-icon" onclick="toggleWishlist(this)">
+                                <i class="fa-regular fa-heart"></i>
+                            </div>
+                            <h6>Brightening Essentials Set</h6>
+                            <button class="btn btn-pink">Add to Cart</button>
+                            <a href="set5.html" class="view-details">View Details</a>
+                        </div>
+                        <div class="product-card">
+                            <div class="img-box">
+                                <img src="img/Night Repair Set.jpg">
+                            </div>
+                            <div class="wishlist-icon" onclick="toggleWishlist(this)">
+                                <i class="fa-regular fa-heart"></i>
+                            </div>
+                            <h6>Night Repair Set</h6>
+                            <button class="btn btn-pink">Add to Cart</button>
+                            <a href="set6.html" class="view-details">View Details</a>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+        </div>
+    </section>
+    <div id="cart-panel" class="cart-panel">
+        <h4>Your Cart</h4>
+        <ul id="cart-items"></ul>
+        <button class="btn btn-pink w-100 mt-3">Checkout</button>
+    </div>
+    <!-- PROFESSIONAL FOOTER -->
+    <footer class="footer pt-5 pb-4" style="background-color:#F7DDE2;">
+        <div class="container">
+
+            <div class="row">
+
+                <!-- LOGO + ABOUT -->
+                <div class="col-md-4 mb-4">
+                    <h3 class="fw-bold" style="font-family: 'Playfair Display'; color:#D4AF37;">
+                        PureBlend
+                    </h3>
+                    <p style="color:#4A2C2A;">
+                        Pure skincare made with love, gentle ingredients, and a touch of luxury.
+                        Our mission is to help you glow naturally, every day.
+                    </p>
+                </div>
+
+                <!-- QUICK LINKS -->
+                <div class="col-md-2 mb-4">
+                    <h5 class="footer-title">Quick Links</h5>
+                    <ul class="list-unstyled footer-links">
+                        <li class="nav-item"><a href="aboutus.html" class="nav-link">About</a></li>
+                        <li class="nav-item"><a href="products.html" class="nav-link">Products</a></li>
+                        <li class="nav-item"><a href="bestseller.html" class="nav-link">Best Sellers</a></li>
+                        <li class="nav-item"><a href="blog.html" class="nav-link">Blog</a></li>
+                    </ul>
+                </div>
+
+                <!-- CUSTOMER CARE -->
+                <div class="col-md-3 mb-4">
+                    <h5 class="footer-title">Customer Care</h5>
+                    <ul class="list-unstyled footer-links">
+                        <li class="nav-item"><a href="faq.html" class="nav-link">FAQ</a></li>
+                        <li class="nav-item"><a href="contact.html" class="nav-link">Contact Us</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">Shipping Info</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">Return Policy</a></li>
+                    </ul>
+                </div>
+
+                <!-- SOCIAL MEDIA -->
+                <div class="col-md-3 mb-4">
+                    <h5 class="footer-title">Follow Us</h5>
+                    <div class="d-flex gap-3">
+                        <div class="social-icons mt-3">
+                            <a href="#" aria-label="Facebook">
+                                <i class="fa-brands fa-facebook-f"></i>
+                            </a>
+                            <a href="#" aria-label="Instagram">
+                                <i class="fa-brands fa-instagram"></i>
+                            </a>
+                            <a href="#" aria-label="TikTok">
+                                <i class="fa-brands fa-tiktok"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <p class="mt-3" style="color:#4A2C2A;">@pureblendskincare</p>
+                </div>
+                <div class="developer-box text-center mt-4">
+                    <img src="/SkincareProject(Asg2)/Img/aoi.jpg" class="developer-img mx-auto d-block mb-2">
+                    <p class="mb-0">
+                        Designed & Developed by <strong>Htet Me Me Hlaing</strong>
+                    </p>
+                </div>
+
+
+            </div>
+
+            <hr style="border-color:#D4AF37;">
+
+            <div class="text-center">
+                <p style="color:#4A2C2A; margin:0;">
+                    © 2025 PureBlend Skincare. All rights reserved.
+                </p>
+            </div>
+
+        </div>
+    </footer>
+</body>
+
+</html>
